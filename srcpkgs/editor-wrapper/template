@@ -1,0 +1,16 @@
+# Template file for 'editor-wrapper'
+pkgname=editor-wrapper
+version=0.0.1
+revision=1
+build_style=gnu-makefile
+short_desc="Simple wrapper script to $EDITOR"
+maintainer="kurth4cker <kurth4cker@gmail.com>"
+license="ISC"
+homepage="https://sr.ht/~kurth4cker/editor-wrapper"
+#changelog=""
+distfiles="https://git.sr.ht/~kurth4cker/editor-wrapper/archive/0.0.1.tar.gz"
+checksum=c198d6847078ff7a37d4a64d33aa3a73ae57558bffefbb40278b03b000d97cda
+
+post_install() {
+	vlicense COPYING
+}
